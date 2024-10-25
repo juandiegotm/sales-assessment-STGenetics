@@ -1,0 +1,39 @@
+// TSConfig options for Node.js v20 from 
+// https://www.typescriptlang.org/docs/handbook/modules/guides/choosing-compiler-options.html
+// https://github.com/tsconfig/bases/?tab=readme-ov-file
+// https://www.totaltypescript.com/tsconfig-cheat-sheet
+{
+    "compilerOptions": {
+        // Required
+        "module": "nodenext",
+        "outDir": "dist",
+        "sourceMap": true,
+        // Implied by `"module": "nodenext"`:
+        // "moduleResolution": "nodenext",
+        // "esModuleInterop": true,
+        // "target": "esnext",
+        "lib": [
+            "es2023"
+        ],
+        // Strictness
+        "strict": true,
+        "skipLibCheck": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+        // Recommended
+        "verbatimModuleSyntax": true,
+        "allowJs": true,
+
+        // tsx recommended options
+        // Treat files as modules even if it doesn't use import/export
+		"moduleDetection": "force",
+		// Allow JSON modules to be imported
+		"resolveJsonModule": true,
+		// Disallow features that require cross-file awareness
+		"isolatedModules": true,
+    },
+    "include": [
+        "src/**/*",
+        "tests/**/*"
+    ]
+}
