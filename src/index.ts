@@ -1,11 +1,12 @@
-type Person = {
-    name: string;
-    age: number;
-} 
+import express, { Request, Response } from 'express';
 
-const person: Person = {
-    name: 'John',
-    age: 30
-}
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-console.log(person.name)
+app.get('/', (req: Request, res: Response) => {
+  res.send('Hello World');
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});

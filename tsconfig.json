@@ -21,7 +21,7 @@
         "noUncheckedIndexedAccess": true,
         "noImplicitOverride": true,
         // Recommended
-        "verbatimModuleSyntax": true,
+        //"verbatimModuleSyntax": true,
         "allowJs": true,
 
         // tsx recommended options

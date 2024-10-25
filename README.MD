@@ -59,3 +59,36 @@ Now, let’s add some basic to our project and test if it works:
 So, yeah! We have our skeleton to start working. 
 
 TODO: Add Docker configuration. 	
+
+## Express Setup 
+
+For creating our app, let's setup a very basic express config:
+
+     npm install express 
+     npm install @types/express
+
+Then, let's modify our index.ts to add the server initialisition and a basic "Hello world" service. 
+
+```ts
+import express, { Request, Response } from 'express';
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req: Request, res: Response) => {
+    res.send('Hello World');
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+```
+
+If everything is okey, we shoud have our server running on http://localhost:3000. 
+
+![Hello world](/.images/helloWorld.png)
+So far so good, let's continue.
+
+## Cust Table
+
+

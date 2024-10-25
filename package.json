@@ -10,8 +10,13 @@
   "author": "juandiegotm",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^5.0.0",
     "@types/node": "^22.7.9",
     "tsx": "^4.19.1",
     "typescript": "^5.7.0-dev.20241025"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "fastify": "^5.0.0"
   }
 }
