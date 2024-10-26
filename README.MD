@@ -58,8 +58,6 @@ Now, let’s add some basic to our project and test if it works:
 
 So, yeah! We have our skeleton to start working. 
 
-TODO: Add Docker configuration. 	
-
 ## Express Setup 
 
 For creating our app, let's setup a very basic express config:
@@ -89,6 +87,18 @@ If everything is okey, we shoud have our server running on http://localhost:3000
 ![Hello world](/.images/helloWorld.png)
 So far so good, let's continue.
 
+## Docker
+So, let's dockerize our app, including the database. I have already selected MySQL, I think the election really doesn't matter too much, but I have also experience with PostgreSQL and MongoDB.
+
+So, first step: create the Dockerfile
+
+	touch Dockerfile
+
+
+
+## Database
+For the database, I take the decision to go with Kysely, an Type-Safety query build for typescript. I know that sequalice and Prisma are very popular ORMs and they always have been selected in the 'standard' stack. However, I found this tools very useful and fits perfect for our current task. 
+
+
+
 ## Cust Table
-
-

@@ -5,7 +5,7 @@ import { Kysely, MysqlDialect, sql } from 'kysely';
 export let db: Kysely<DatabaseSchema>;
 const pool = createPool({
     database: 'sales',
-    host: 'localhost',
+    host: 'mysql',
     user: 'admin',
     password: 'admin',
     port: 3306,
