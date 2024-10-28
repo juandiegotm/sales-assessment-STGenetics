@@ -40,3 +40,11 @@ export async function deleteItems(id: number) {
     return await db.deleteFrom('items').where('id', '=', id)
     .executeTakeFirst();
 }
+
+export async function getItemQuantity(id: number) {
+  return await db.selectFrom('items').where('id', '=', id).select('quantity').executeTakeFirst();
+}
+
+export async function setItemQuantity(id: number, quantity: number) {
+    return await db.updateTable('items').set({ quantity }).where('id', '=', id).execute();
+}
