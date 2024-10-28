@@ -1,4 +1,5 @@
 import {
+    ColumnType,
     Generated,
     Insertable,
     Selectable, 
@@ -18,6 +19,7 @@ export interface CustomerTable {
     city: string;
     state: string;
     zipCode: string;
+    created_at: ColumnType<Date, string | undefined, never>
 }
 
 export type Customer = Selectable<CustomerTable>;
