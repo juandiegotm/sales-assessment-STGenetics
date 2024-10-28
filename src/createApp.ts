@@ -1,5 +1,6 @@
 import express from 'express';
-import customerRouter from './routes/customers';
+import customerRouter from './routes/customer.route';
+import itemRouter from './routes/item.route';
 import { initDatabase } from './config/database';
 
 export function createApp() {
@@ -11,6 +12,7 @@ export function createApp() {
     app.use(express.urlencoded({ extended: true }));
     
     app.use('/api/customers', customerRouter);
+    app.use('/api/items', itemRouter);
 
     return app;
 }

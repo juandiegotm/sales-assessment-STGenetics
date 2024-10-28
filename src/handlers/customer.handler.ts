@@ -1,8 +1,6 @@
 import { Request, Response } from 'express';
 import { CustomerDTO } from '../dtos/customer.dto';
 import * as customerRepository from '../repositories/customer.repository';
-import Customer from '../types/response';
-import { raw } from 'mysql2';
 
 export async function getCustomers(request: Request, response: Response) {
     const customers = await customerRepository.findCustomers({});

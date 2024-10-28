@@ -1,6 +1,6 @@
 
 import { Router } from 'express';
-import { getCustomers, getCustomerById, createCustomer, updateCustomer, deleteCustomer} from '../handlers/customers';
+import { getCustomers, getCustomerById, createCustomer, updateCustomer, deleteCustomer} from '../handlers/customer.handler';
 
 const router = Router();
 

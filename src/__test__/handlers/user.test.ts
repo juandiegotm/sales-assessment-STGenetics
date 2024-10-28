@@ -1,4 +1,4 @@
-import { getCustomers } from "../../handlers/customers";
+import { getCustomers } from "../../handlers/customer.handler";
 
 import { mockRequest, mockResponse } from "../../__mocks__";
 
