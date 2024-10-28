@@ -7,7 +7,7 @@ import {
 } from 'kysely';
 
 export interface DatabaseSchema {
-    customer: CustomerTable;
+    customers: CustomerTable;
 }
 
 export interface CustomerTable {
@@ -19,7 +19,7 @@ export interface CustomerTable {
     city: string;
     state: string;
     zipCode: string;
-    created_at: ColumnType<Date, string | undefined, never>
+    createdAt: ColumnType<Date, string | undefined, never>
 }
 
 export type Customer = Selectable<CustomerTable>;

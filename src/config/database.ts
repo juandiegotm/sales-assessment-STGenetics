@@ -1,4 +1,4 @@
-import { DatabaseSchema } from '../types/databaseSchema';
+import { DatabaseSchema } from '../types/db';
 import { createPool } from 'mysql2';
 import { Kysely, MysqlDialect, sql, Migrator, FileMigrationProvider } from 'kysely';
 

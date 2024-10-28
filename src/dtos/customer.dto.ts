@@ -1,5 +1,5 @@
 
-export interface CreateCustDTO {
+export interface CustomerDTO {
     name: string;
     phone: string;
     streetAdress1: string;
